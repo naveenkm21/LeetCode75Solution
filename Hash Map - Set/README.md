@@ -89,8 +89,7 @@ class Solution {
         return s;
     }
 }
-
-
+```
 # [1207. Unique Number of Occurrences](https://leetcode.com/problems/unique-number-of-occurrences)
 
 
@@ -144,6 +143,15 @@ The time complexity is $O(n)$, and the space complexity is $O(n)$. Here, $n$ is 
 
 <!-- tabs:start -->
 
+#### Python3
+
+```python
+class Solution:
+    def uniqueOccurrences(self, arr: List[int]) -> bool:
+        cnt = Counter(arr)
+        return len(set(cnt.values())) == len(cnt)
+```
+
 #### Java
 
 ```java
@@ -158,8 +166,6 @@ class Solution {
 }
 ```
 
-
-<!-- problem:start -->
 
 # [1657. Determine if Two Strings Are Close](https://leetcode.com/problems/determine-if-two-strings-are-close)
 
